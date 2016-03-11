@@ -2,8 +2,12 @@ module.exports = {
     // title: 'GitBook Documentation',
 
     // theme-official, disqus, quizzes
-    plugins: ['disqus'],
+    "plugins": ['edit-link', 'disqus'],
     "pluginsConfig": {
+        "edit-link": {
+            "base": "https://github.com/aidenzou/aidenzou.github.io",
+            "label": "开始纠错"
+        },
         "disqus": {
             "shortName": "blogbook"
         }
