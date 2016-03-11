@@ -5,7 +5,7 @@ module.exports = {
     "plugins": ['edit-link', 'disqus'],
     "pluginsConfig": {
         "edit-link": {
-            "base": "https://github.com/aidenzou/aidenzou.github.io",
+            "base": "https://github.com/aidenzou/blog/blob/master",
             "label": "开始纠错"
         },
         "disqus": {
