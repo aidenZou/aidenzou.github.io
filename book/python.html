@@ -52,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="1.5" data-chapter-title="python" data-filepath="book/python.md" data-basepath=".." data-revision="Mon Mar 14 2016 13:45:40 GMT+0800 (CST)">
+    <div class="book" data-level="1.5" data-chapter-title="python" data-filepath="book/python.md" data-basepath=".." data-revision="Wed Apr 13 2016 22:53:44 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -238,6 +238,36 @@
             
         </li>
     
+        <li class="chapter " data-level="1.11" data-path="book/node.html">
+            
+                
+                    <a href="../book/node.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                        Node
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="book/ubuntu.html">
+            
+                
+                    <a href="../book/ubuntu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.12.</b>
+                        
+                        Ubuntu
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -291,6 +321,21 @@
                             <b>2.3.</b>
                         
                         gitbook
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="book/cloud.html">
+            
+                
+                    <a href="../book/cloud.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        云平台
                     </a>
             
             
@@ -436,7 +481,12 @@
   <code>./develop/py35env/bin/jupyter-notebook</code></li>
 <li><a href="https://pypi.python.org/pypi/ipython" target="_blank">ipython</a></li>
 <li><a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/" target="_blank">Beautiful</a> &#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x4ECE;HTML&#x6216;XML&#x6587;&#x4EF6;&#x4E2D;&#x63D0;&#x53D6;&#x6570;&#x636E;&#x7684;Python&#x5E93;</li>
+<li><a href="https://github.com/mongodb/motor" target="_blank">motor</a> for mongodb(&#x652F;&#x6301;&#x5F02;&#x6B65;)</li>
+<li><a href="https://github.com/PyMySQL/Tornado-MySQL" target="_blank">Tornado-MySQL</a> PyMySQL fork for Tornado</li>
+<li><a href="http://pythonhosted.org/Markdown/siteindex.html" target="_blank">Markdown</a> <a href="https://pythonhosted.org/Markdown/extensions/index.html" target="_blank">&#x6269;&#x5C55;</a> markdown2html</li>
+<li><a href="https://github.com/FSX/misaka" target="_blank">misaka</a> markdown2html</li>
 </ul>
+<p><a href="https://github.com/vmg/sundown" target="_blank">https://github.com/vmg/sundown</a></p>
 <h2 id="centos">CentOS</h2>
 <pre><code class="lang-shell"># &#x4E0B;&#x8F7D;Python&#x6E90;(Download Python source)
 $wget https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tar.xz
@@ -461,6 +511,15 @@ $make install
 $which python3.5
 /usr/local/bin/python3.5
 </code></pre>
+<h2 id="ubuntu">ubuntu</h2>
+<p>apt-get install libssl-dev</p>
+<p>apt-get install python3-pip</p>
+<hr>
+<p>apt-cache search pyvenv
+python3.4-venv - Interactive high-level object-oriented language (pyvenv binary, version 3.4)
+python3.5-venv - Interactive high-level object-oriented language (pyvenv binary, version 3.5)</p>
+<p>apt-cache search pyvenv</p>
+<p>apt-get install python3.5-dev</p>
 <h3 id="flask">Flask</h3>
 <h4 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h4>
 <pre><code class="lang-shell">pip3 install Flask
@@ -477,6 +536,20 @@ $which python3.5
 </ul>
 <h3 id="&#x90E8;&#x7F72;">&#x90E8;&#x7F72;</h3>
 <p>ngingx + gunicorn</p>
+<p>source py35env/bin/activate</p>
+<p>deactivate</p>
+<p>ngingx + uwsgi</p>
+<p>supervisor</p>
+<hr>
+<p>ps -ef |grep super</p>
+<p>apt-get install supervisor</p>
+<p>/usr/bin/supervisord    --supervisor&#x670D;&#x52A1;&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;
+/usr/bin/supervisorctl  --supervisor&#x670D;&#x52A1;&#x63A7;&#x5236;&#x7A0B;&#x5E8F;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;status/start/stop/restartxx&#x7B49;
+/etc/supervisor/supervisord.conf   --&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5B9A;&#x4E49;&#x670D;&#x52A1;&#x540D;&#x79F0;&#x4EE5;&#x53CA;&#x63A5;&#x53E3;&#x7B49;&#x7B49;</p>
+<p>supervisorctl -c /etc/supervisor/supervisord.conf
+restart all</p>
+<p>supervisord
+supervisorctl reload</p>
 
                     
                     </section>

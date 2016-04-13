@@ -9,6 +9,10 @@
 
 ### let
 
+```
+let name = 'aiden'
+```
+
 #### code：作用域
 
 ```
@@ -75,9 +79,14 @@ let users = [{name: 'AidenZou', age: 18}, {name: '子凡', age:15}];
 ### ES6 箭头函数
 
 ```
-let names = users.map( item => item.name);
+let names = users.map( (item) => item.name);
 console.log(names)  // ["AidenZou","子凡"]
 ```
+
+```
+let foo = (x) => x + 1;
+```
+参数均使用括号()包裹，即便只有一个参数
 
 ### ES5
 ```
@@ -185,4 +194,64 @@ var xstr5 = "1...\n" +
 // res
 var res = "1...\n2...\n3 lines long!";
 ```
+
+---
+
+对于对象、类中的方法，使用增强的对象字面量：
+
+可在对象中直接定义方法(推荐使用)
+```
+// Good
+let foo = {
+    bar() {
+        // code
+    }
+};
+
+// Bad
+let foo = {
+    bar: () => {
+        // code
+    }
+};
+
+// Bad
+let foo = {
+    bar: function () {
+        // code
+    }
+};
+```
+
+这样的用法，这对可读性并没有什么帮助(不推荐)
+```
+let bar = 'bar';  
+let foo = {  
+    bar // 相当于bar: bar
+};
+```
+
+
+### 多行字符串
+
+```
+let html =  
+`<div>
+    <p>Hello World</p>
+</div>` 
+```
+
+
+### 字符串变量替换
+
+```
+let name = 'aiden', time = 1314;
+let message = `Hello ${name}, it's ${time} now`;
+let html = `<div>${name}, ${time}</div>`;
+```
+
+
+### 解构
+
+
 

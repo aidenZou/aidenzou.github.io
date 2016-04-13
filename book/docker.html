@@ -52,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="1.3" data-chapter-title="docker" data-filepath="book/docker.md" data-basepath=".." data-revision="Mon Mar 14 2016 13:45:40 GMT+0800 (CST)">
+    <div class="book" data-level="1.3" data-chapter-title="docker" data-filepath="book/docker.md" data-basepath=".." data-revision="Wed Apr 13 2016 22:53:44 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -238,6 +238,36 @@
             
         </li>
     
+        <li class="chapter " data-level="1.11" data-path="book/node.html">
+            
+                
+                    <a href="../book/node.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                        Node
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="book/ubuntu.html">
+            
+                
+                    <a href="../book/ubuntu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.12.</b>
+                        
+                        Ubuntu
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -291,6 +321,21 @@
                             <b>2.3.</b>
                         
                         gitbook
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="book/cloud.html">
+            
+                
+                    <a href="../book/cloud.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        云平台
                     </a>
             
             
@@ -424,6 +469,23 @@
 <blockquote>
 <p>--volumes-from &#x7528;&#x6765;&#x6307;&#x5B9A;&#x8981;&#x4ECE;&#x54EA;&#x4E2A;&#x6570;&#x636E;&#x5377;&#x6765;&#x6302;&#x8F7D;&#x6570;&#x636E;&#x3002;</p>
 </blockquote>
+<p>OS X</p>
+<p><code>eval $(docker-machine env default)</code></p>
+<pre><code class="lang-shell">&#x279C;  ~ docker ps
+Cannot connect to the Docker daemon. Is the docker daemon running on this host?
+&#x279C;  ~ eval $(docker-machine env default)
+&#x279C;  ~ docker ps
+CONTAINER ID        IMAGE                           COMMAND                  CREATED             STATUS              PORTS                      NAMES
+bcac56198b24        mongo:latest                    &quot;/entrypoint.sh mongo&quot;   4 weeks ago         Up 8 hours          0.0.0.0:27017-&gt;27017/tcp   mongo
+00c0f6fd8ca5        daocloud.io/daocloud/daomonit   &quot;/usr/local/bin/daomo&quot;   5 weeks ago         Up 10 hours                                    daomonit
+</code></pre>
+<p><code>docker-machine ssh default</code></p>
+<h2 id=""> </h2>
+<p>&#x5EFA;&#x7ACB;&#x955C;&#x50CF;</p>
+<p>docker build -t ipython/notebook .</p>
+<p>&#x6307;&#x4EE4;&#x542F;&#x52A8;&#x5BB9;&#x5668;</p>
+<p><code>docker run -p 80:80 my-front-end-app</code>
+<code>docker run -d -p 8888:8888 -e PASSWORD=admin ipython/notebook</code></p>
 
                     
                     </section>
