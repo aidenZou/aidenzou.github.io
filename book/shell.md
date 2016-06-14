@@ -1,4 +1,24 @@
-# 
+#
+
+
+### MAC
+
+brew install node
+brew install watchman
+brew install flow
+
+定期运行
+brew update && brew upgrade
+
+
+### NODE
+
+npm config set registry https://registry.npm.taobao.org --global
+npm config set disturl https://npm.taobao.org/dist --global
+
+
+### SHELL
+
 
 ```shell
 netstat -lntp
@@ -113,4 +133,9 @@ awk: awk 用来从文本文件中提取字段。缺省地，字段分割符是�
 2. 概念: 管道, 重定向和 backtick
 
 3. 流程控制
+
+
+
+npm ls -g --depth=1 2>/dev/null | grep generator-
+
 

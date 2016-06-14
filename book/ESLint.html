@@ -52,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="2.2" data-chapter-title="ESLint" data-filepath="book/ESLint.md" data-basepath=".." data-revision="Wed Apr 13 2016 22:53:44 GMT+0800 (CST)">
+    <div class="book" data-level="2.2" data-chapter-title="ESLint" data-filepath="book/ESLint.md" data-basepath=".." data-revision="Tue Jun 14 2016 13:03:13 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -457,6 +457,18 @@
                         <h1 id="eslint">ESLint</h1>
 <p><code>npm install -g eslint</code></p>
 <p><code>eslint --init</code></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">/* global Swiper, _hmt */</span>
+
+<span class="hljs-comment">// &#x76F4;&#x63A5; eslint-disable &#x7684;&#x4F5C;&#x7528;&#x662F;&#x5B8C;&#x5168;&#x7981;&#x7528;ESLint&#x8FDB;&#x884C;&#x68C0;&#x6D4B;</span>
+<span class="hljs-comment">/* eslint-disable */</span>
+...
+<span class="hljs-comment">/* eslint-enable */</span>
+
+<span class="hljs-comment">// &#x4F7F;&#x7528; eslint-disable + &#x89C4;&#x5219;&#x540D; &#x7684;&#x4F5C;&#x7528;&#x662F;&#x4E0D;&#x68C0;&#x6D4B;&#x8FD9;&#x6761;&#x89C4;&#x5219;&#xFF0C;&#x6CE8;&#x610F;&#x8981;&#x4F7F;&#x7528; eslint-enable &#x7ED3;&#x675F;&#x54DF;</span>
+<span class="hljs-comment">/* eslint-disable no-new */</span>
+...
+<span class="hljs-comment">/* eslint-enable no-new */</span>
+</code></pre>
 
                     
                     </section>
