@@ -5,6 +5,8 @@
 
 - [React Native Playground Share](https://rnplay.org/)
 
+- [JS.coach](https://js.coach/react-native)
+
 ```shell
 npm install -g react-native-cli
 react-native init AwesomeProject
@@ -36,6 +38,7 @@ react-native run-ios
 - [F8 App](https://github.com/fbsamples/f8app) React Native最佳学习模版- Facebook 官方 F8 App开源了
 
 - [聊天界面](https://github.com/FaridSafi/react-native-gifted-messenger)
+- [Marvel](https://github.com/Shuijwan/marvel) 一个React Native的练手App，利用Marvel的API来显示一些Marvel动漫的信息.
 
 ## IDE
 
@@ -48,6 +51,8 @@ react-native run-ios
 
 - [React.createClass VS React.Component](http://kunkun12.com/2016/03/05/React-createClass-VS-React-Component/)
 - [React Native 中组件的生命周期](http://www.race604.com/react-native-component-lifecycle/)
+- [React Native 触摸事件处理详解](http://www.race604.com/react-native-touch-event/)
+
 
 ### 生命周期
 

@@ -1,6 +1,13 @@
 #
 
 
+- [spf13-vim](https://github.com/spf13/spf13-vim)
+
+创建软连接
+`
+ln -s ~/develop/node/node_modules .
+`
+
 ### MAC
 
 brew install node
@@ -19,11 +26,19 @@ npm config set disturl https://npm.taobao.org/dist --global
 
 ### SHELL
 
+netstat -ant | grep LISTEN
 
 ```shell
 netstat -lntp
 
 tcp        0      0 0.0.0.0:3306                0.0.0.0:*                   LISTEN      1115/mysqld
+
+
+lsof -n -i4TCP:8080
+
+mac 如何查看本机8000端口被占用了
+
+lsof -i -P | grep -i "8000"
 
 
 ps -ef|grep 1115
